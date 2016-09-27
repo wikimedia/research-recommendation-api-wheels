@@ -1,5 +1,6 @@
 all:
 	mkdir -p wheels && \
-	pip wheel -e . -w wheels && \
-	python setup.py bdist_wheel && \
-	cp dist/*.whl wheels
+	pip wheel bravado-core -w wheels --no-deps && \
+	pip wheel swagger-spec-validator -w wheels --no-deps && \
+	pip wheel strict-rfc3339 -w wheels --no-deps && \
+	pip wheel rfc3987 -w wheels --no-deps
