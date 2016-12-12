@@ -1,7 +1,5 @@
 all:
 	mkdir -p wheels && \
-	pip wheel bravado-core -w wheels --no-deps && \
-	pip wheel jsonschema -w wheels --no-deps && \
-	pip wheel swagger-spec-validator -w wheels --no-deps && \
-	pip wheel strict-rfc3339 -w wheels --no-deps && \
-	pip wheel rfc3987 -w wheels --no-deps
+	git clone https://gerrit.wikimedia.org/r/research/recommendation-api && \
+	pip wheel ./recommendation-api -w wheels && \
+	rm -rf recommendation-api

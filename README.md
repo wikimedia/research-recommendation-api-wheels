@@ -13,7 +13,6 @@ use `recommendation-api-build.recommendation-api.eqiad.wmflabs`.
 1. `git clone https://<username>@gerrit.wikimedia.org/r/a/research/recommendation-api/wheels`
 1. `git checkout -b <branch name>`
 1. `cd wheels`
-1. Update `Makefile` as necessary
 1. `make`
 1. Add and commit as necessary
 1. `git push origin <branch name>:refs/for/master/<branch name>`
